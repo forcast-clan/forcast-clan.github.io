@@ -58,6 +58,13 @@
 					enter:		function() { $header.addClass('alt'); },
 					leave:		function() { $header.removeClass('alt'); }
 				});
+				
+				var numAnim = new CountUp("flawless", 0, 75, 0, 5);
+				if (!numAnim.error) {
+					numAnim.start();
+				} else {
+					console.error(numAnim.error);
+				}
 
 			}
 
